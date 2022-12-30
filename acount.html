@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>登录</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/acount.css"/>
+	<style type="text/css">
+      .item-box{
+		list-style: none;
+	  }
+	
+	</style>
+	<body style="background-color: #F4F4F4; overflow:hidden;">
+		<div class="top-login">
+			<div class="user-i">
+				<img class="i-user" src="./img/user.png" >
+			</div>
+			<div class="t-text">
+				登录/注册
+			</div>
+		</div>
+		<div class="item-box">
+			<div class="item">
+				<div class="center-text">
+					<div class="left-i">
+						<img src="./img/icon/item.png" >
+					</div>
+					我的订单
+				</div>
+				<div class="right">
+					<img class="jiantou" src="./img/jiantou.png" >
+				</div>
+			</div>
+			<div class="item">
+				<div class="center-text">
+					<div class="left-i">
+						<img src="./img/icon/item1.png" >
+					</div>
+					我的优惠券
+				</div>
+				<div class="right">
+					<img class="jiantou" src="./img/jiantou.png" >
+				</div>
+			</div>
+			<div class="item">
+				<div class="center-text">
+					<div class="left-i">
+						<img src="./img/icon/item2.png" >
+					</div>
+					我的购物车
+				</div>
+				<div class="right">
+					<img class="jiantou" src="./img/jiantou.png" >
+				</div>
+			</div>
+<!--  			<div class="item">
+				<div class="center-text">
+					<div class="left-i">
+						<img src="./img/icon/item3.png" >
+					</div>
+					<p>我的学习卡</p>
+				</div>
+				<div class="right">
+					<img class="jiantou" src="./img/jiantou.png" >
+				</div>
+			</div> -->
+<!-- 			<div class="item" style="margin-top: 20px;">
+				<div class="center-text">
+					<div class="left-i">
+						<img src="./img/icon/item4.png" >
+					</div>
+					分享赚学费
+				</div>
+				<div class="right">
+					<img class="jiantou" src="./img/jiantou.png" >
+				</div>
+			</div>
+		</div> -->
+		
+		<div class="tab-footer">
+			<a class="tab " href="./index.html">
+				<span class="iconfont icon-home icontab" ></span>
+				<span class="text">首页</span>
+			</a>
+			<a class="tab " href="./login.html">
+				<span class="iconfont icon-xuexi- icontab" ></span>
+				<span class="text">学习</span>
+			</a>
+			<a class="tab " href="./acount.html">
+				<span class="iconfont icon-zhanghao1 icontab" ></span>
+				<span class="text">我的</span>
+			</a>
+		</div>
+
+		<script>
+	   var json=[
+      {
+        a_img:"./img/icon/item3.png",
+        a_p:"我的学习卡",
+		a_tb:"./img/jiantou.png"
+      }]
+	  var item_box=document.querySelector(".item-box");
+       for(var a of json){
+		var na = document.createElement("li");
+            na.innerHTML=
+		`<div class="item-box">
+		<div class="item">
+				<div class="center-text">
+					<div class="left-i">
+						<img src="${a.a_img}" >
+					</div>
+					<p>${a.a_p}</p>
+				</div> 
+				<div class="right">
+					<img class="jiantou" src="${a.a_tb}" >
+				</div>
+			</div> `
+	   }
+	   item_box.appendChild(na);
+
+	   var jsonb=[
+      {
+        b_img:"./img/icon/item4.png",
+        b_p:"分享赚学费",
+		b_tb:"./img/jiantou.png"
+      }]
+	  var item_box2=document.querySelector(".item-box");
+       for(var b of jsonb){
+		var nb = document.createElement("li");
+            nb.innerHTML=
+			`<div class="item-box">
+			<div class="item" style="margin-top: 20px;">
+				<div class="center-text">
+					<div class="left-i">
+						<img src="${b.b_img}" >
+					</div>
+					${b.b_p}
+				</div>
+				<div class="right">
+					<img class="jiantou" src="${b.b_tb}" >
+				</div>
+			</div>
+		</div>`
+	   }
+	   item_box2.appendChild(nb);
+		</script>
+	</body>
+</html>
