@@ -252,8 +252,8 @@
 						color: #6b6b6b;
 					}
 					.pic img{
-                                                width: 340px;
-						
+                                                width: 360px;
+						padding-left:15px;
 						object-fit: cover;
 					}
 					.button{
