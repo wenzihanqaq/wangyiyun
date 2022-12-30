@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>网易云课堂h5</title>
+		<link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<style type="text/css">
+		*{	
+			margin: 0px;
+			padding: 0px;
+			font-family: 微软雅黑;		
+		}
+		a{
+			text-decoration: none;
+		}
+			.head{
+				
+				width: 92%;
+				height: 47px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: white;
+			}
+			.head>.left{
+				width: 114px;
+			}
+			.head>.left>.h-l-img{
+				width: 100%;
+				height: 23px;
+			}
+			.right>.search{
+				color: gray;
+			}
+			.item-list{
+				display: flex;
+				flex-wrap: wrap;
+				padding-bottom: 10px;
+				justify-content: center;
+				list-style: none;
+			}
+			.search{
+				text-decoration: none;
+				font-size: 16px;
+				color: black;
+			}
+			.sd{
+				background-color: #fff;
+				border: none;
+			}
+			.item-list>.item{
+				width: 24%;
+				display: flex;
+				margin-top: 10px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;	
+			}
+			.item-list>.item .i-img-box{
+				width: 36px;
+				height: 36px;
+			}
+			.i-img-box>.i-img{
+				width: 100%;
+				height: auto;
+			}
+			.i-text{
+				margin-top: 4px;
+				text-align: center;
+				font-size: 12px;
+				display: flex;
+				flex-direction: row;	
+			}
+			.line{
+				width: 100%;
+				height: 12px;
+				background-color: #f2f4f7;
+			}
+			.block-box{
+				width: 100%;
+				padding: 20px 0px;
+				padding-top: 0px;
+			}
+			.block-box>.g-title{
+				height: 50px;
+				line-height: 50px;
+				font-size: 18px;
+				padding-left: 10px;
+			}
+			.goods-list{
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0px 2%;
+				
+			}
+			.goods-list>.g-item{
+				width: 46%;
+				margin-right: 5%;
+				margin-bottom: 16px;
+			}
+			.goods-list>.g-item:nth-child(2n){
+				margin-right: 0px !important;/* 样式表 */
+			}
+			.g-i-box{
+				width: 100%;
+				padding-left: 15px;
+			}
+			.g-i-box>img{
+				width: 161px;
+				height: auto;
+			}
+			.g-text{
+				height: 22px;
+				margin-top: 6px;
+				font-size: 14px;
+				padding-left: 15px;
+			}
+			.tab-footer{
+				width: 100%;
+				height: 60px;
+				display: flex;
+				align-items: center;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				border-top: 1px solid #eee;
+				
+				background-color: white;
+			}
+			.tab-footer>.tab{
+				width: 33%;
+				display: flex;
+				text-decoration: none;
+				flex-direction: column;
+				
+			}
+			.tab>.text{
+				margin-top: 4px;
+				text-align: center;
+				font-size: 14px;
+				color: #3c4a55;
+			}
+			.icontab{
+				text-align: center;
+				font-size: 24px;
+				color: black;
+			}
+			.icontab1{
+				text-align: center;
+				font-size: 24px;
+				display: none;
+				color: black;
+			}
+		</style>
+	</head>
+	<body style="padding-bottom: 60px;">
+		<header class="head">
+			<div class="left">
+				<img class="h-l-img" src="./img/logo.png" >
+			</div>
+			<div class="right">
+                <button onclick="tosousuo()" class="sd">
+					<div class="search">
+						搜索
+					</div>
+				</button>
+			</div>
+		</header>
+	
+		<div class="item-list">
+			<div class="item">
+				<button onclick="tozhuanye()" class="sd">
+				<div class="i-img-box">
+					<img class="i-img" src="https://edu-image.nosdn.127.net/fbbf1cfc-45f2-4a42-bcbb-df5cad63d3c2.png?imageView&quality=100&thumbnail=103y103" >
+				</div>
+				<div class="i-text">
+					微专业
+				</div>
+			</button>
+			</div>
+			 <div class="item">
+				<button onclick="tozhichang()" class="sd">
+				<div class="i-img-box">
+					<img class="i-img" src="./img/item2.png" >
+				</div>
+				<div class="i-text">
+					职场提
+				</div>
+			</button>
+			</div>
+			<div class="item">
+				<div class="i-img-box">
+					<img class="i-img" src="./img/item3.png" >
+				</div>
+				<div class="i-text">
+					有道考研
+				</div>
+			</div>
+			<div class="item">
+				<div class="i-img-box">
+					<img class="i-img" src="./img/item4.png" >
+				</div>
+				<div class="i-text">
+					人工智能
+				</div>
+			</div>
+			<div class="item">
+				<div class="i-img-box">
+					<img class="i-img" src="./img/item5.png" >
+				</div>
+				<div class="i-text">
+					产品与运营
+				</div>
+			</div>
+			<div class="item">
+				<div class="i-img-box">
+					<img class="i-img" src="./img/item6.png" >
+				</div>
+				<div class="i-text">
+					创意设计
+				</div>
+			</div>
+			<div class="item">
+				<div class="i-img-box">
+					<img class="i-img" src="./img/item7.png" >
+				</div>
+				<div class="i-text">
+					电子商务
+				</div>
+			</div>
+            <div class="item">
+				<div class="i-img-box">
+					<img class="i-img" src="./img/item8.png" >
+				</div>
+				<div class="i-text">
+					语言学习
+				</div>
+			</div>
+			
+		</div>
+        <div class="lunbo" style="text-align: center;margin:0 auto">
+       <img id="lunbo_img" src="./img/goods-1.png"/>
+        </div>
+ 
+		<div class="line"></div>
+		<div class="block-box">
+				<div class="g-title">
+					畅销好课
+				</div>
+				<div class="goods-list">
+					<div class="g-item">
+						<div class="g-i-box">
+							<img src="./img/goods-1.png" >
+						</div>
+						<div class="g-text">
+							听得懂的金融思维课
+						</div>
+					</div>
+					<div class="g-item">
+						<div class="g-i-box">
+							<img src="./img/goods-2.png" >
+						</div>
+						<div class="g-text">
+							能帮你赚到钱的50节
+						</div>
+					</div>
+					<div class="g-item">
+						<div class="g-i-box">
+							<img src="./img/goods-3.png" >
+						</div>
+						<div class="g-text">
+							25堂通识阅读课 带你打破知识边界
+						</div>
+					</div>
+					<div class="g-item">
+						<div class="g-i-box">
+							<img src="./img/goods-4.jpg" >
+						</div>
+						<div class="g-text">
+							10天学会用手机app提高工作效率
+						</div>
+					</div>
+					<div class="g-item">
+						<div class="g-i-box">
+							<img src="./img/goods-5.png" >
+						</div>
+						<div class="g-text">
+							赵铁夫讲单词
+						</div>
+					</div>
+					<div class="g-item">
+						<div class="g-i-box">
+							<img src="./img/goods-6.png" >
+						</div>
+						<div class="g-text">
+							高校精英职场习惯
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="tab-footer">
+			<a class="tab " href="./index.html">
+				<span class="iconfont icon-home icontab1" ></span>
+				<span class="iconfont icon-shouye icontab"></span>
+				<span class="text">首页</span>
+			</a>
+			<a class="tab " href="./login.html">
+				<span class="iconfont icon-xuexi- icontab" ></span>
+				<span class="text">学习</span>
+			</a>
+			<a class="tab " href="./acount.html">
+				<span class="iconfont icon-zhanghao icontab" ></span>
+				<span class="iconfont icon-zhanghao1 icontab1"></span>
+				<span class="text">我的</span>
+			</a>
+		</div>
+	</body>
+	    <script>
+      var index = 1;
+        function lunbo(){
+            index ++ ;
+            //判断index是否大于3
+            if(index > 3){
+                index = 1;
+            }
+            //获取img对象
+            var img = document.getElementById("lunbo_img");
+            img.src = "./img/goods-"+index+".png";
+        }
+        setInterval(lunbo,2000);
+      
+		//onclick
+		function tosousuo(){
+            window.location.href= "./sousuo.html";
+        }
+		function tozhuanye(){
+            window.location.href= "./list.html";
+        }
+		function tozhichang(){
+            window.location.href= "./detail.html";
+        }
+          
+		//点击变成实心
+		var kongxin = document.querySelector(".icontab");
+        var shixin = document.querySelector(".icontab1");
+   
+  
+        kongxin.onclick=function(){
+        this.style.display = 'none';
+        shixin.style.display = 'block';
+      
+     }
+       
+        shixin.onclick=function(){
+        this.style.display = 'none';
+        kongxin.style.display = 'block';
+      
+  }
+ </script>
+</html>
