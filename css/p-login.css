@@ -1,0 +1,16 @@
+		.input-box{
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			.input-box>input{
+				width: 100%;
+				border: 1px solid #c5cddb;
+				height: 44px;
+				line-height: 44px;
+				padding-left: 14px;
+				box-sizing: border-box;
+				border-radius: 4px;
+			}
+			.tips-box{
+				width: 100%;
+			}

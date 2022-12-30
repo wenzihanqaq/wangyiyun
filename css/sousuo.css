@@ -1,0 +1,129 @@
+h3,ul,p,body{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000
+}
+.header{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+.header>span:first-child{
+    line-height: 32px;
+    font-size: 20px;
+    padding: 0 8px;
+}
+.header>div{
+    flex-grow: 1;
+    background-color: rgb(246,247,249);
+    display: flex;
+    margin-right: 10px;
+}
+.header>div>span{
+    font-size: 18px;
+    color: #666;
+    line-height: 32px;
+}
+.header input{
+    border: none;
+    height: 32px;
+    flex-grow: 1;
+    background-color: rgb(246,247,249);
+    outline: none;
+    font-size: 14px;
+}
+.txt{
+    margin: 0 8px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #f00;
+    font-weight: bold;
+}
+.icon-back {
+    width: 2em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+
+.icon-sousuo {
+    width: 2em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.his{
+    margin: 16px 10px;
+}
+.zt{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-right: 4px;
+}
+.ht{
+
+    line-height: 50px;
+    display: flex;
+}
+.ht>h3{
+    font-size: 14px;
+    color: #666;
+    flex-grow: 1;
+}
+.ht>span{
+    font-size: 16px;
+}
+.icon-delete {
+    width: 2em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.search_his{
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid rgb(246,247,249);
+    padding: 5px;
+    line-height: 25px;
+    color: gray;
+    width: 230px;
+}
+.search_her{
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid rgb(246,247,249);
+    padding: 5px;
+    line-height: 25px;
+    margin-top: 10px;
+    color: gray;
+    width:230px;
+}
+
+.search_ht{
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid rgb(246,247,249);
+    padding: 5px;
+    line-height: 25px;
+    margin-top: 10px;
+    color: gray;
+
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
